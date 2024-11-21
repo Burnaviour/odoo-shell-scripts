@@ -10,7 +10,8 @@ echo -e "${GREEN}Cloning top 10 OCA repositories with the highest star rating (e
 # List of top OCA repositories (update to include new ones if needed)
 
 REPOSITORIES=(
-  "https://github.com/OCA/server-ux.git"
+  "https://github.com/OCA/field-service.git"
+  # "https://github.com/OCA/server-ux.git"
   # "https://github.com/OCA/web.git"
   # "https://github.com/OCA/pos.git"
   # "https://github.com/OCA/server-tools.git"
