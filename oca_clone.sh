@@ -10,7 +10,10 @@ echo -e "${GREEN}Cloning top 10 OCA repositories with the highest star rating (e
 # List of top OCA repositories (update to include new ones if needed)
 
 REPOSITORIES=(
-  "https://github.com/OCA/field-service.git"
+  # "https://github.com/OCA/helpdesk.git"
+  "https://github.com/OCA/dms.git"
+  # "https://github.com/OCA/helpdesk.git"
+  # "https://github.com/OCA/field-service.git"
   # "https://github.com/OCA/server-ux.git"
   # "https://github.com/OCA/web.git"
   # "https://github.com/OCA/pos.git"
@@ -72,7 +75,7 @@ for REPO in "${REPOSITORIES[@]}"; do
   
   # Construct the full folder path with the OCA_ prefix
   FOLDER_NAME="OCA_${REPO_NAME}"
-  FULL_FOLDER_PATH="$PARENT_DIR/$FOLDER_NAME"
+  FULL_FOLDER_PATH="/opt/odoo17_community/$PARENT_DIR/$FOLDER_NAME"
   
   echo -e "${GREEN}Cloning ${REPO} with 17.0 branch into ${FULL_FOLDER_PATH}...${NC}"
   
